@@ -1,0 +1,8 @@
+﻿PublicationViewModels: 
+Library.ViewModels.Models.BookViewModel
+Library.ViewModels.Models.BookViewModel
+Library.ViewModels.Models.BookViewModel
+Книга - asd, автор - asd, год издательства - 123.
+Library.ViewModels.Models.MagazineViewModel
+Library.ViewModels.Models.MagazineViewModel
+Library.ViewModels.Models.MagazineViewModel

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publications>
+  <publicationhouse>
+    <Books>1. Название книги - Отцы и дети, автор - И. Тургенев, год издательства - 20162. Название книги - Война и мир, автор - Л. Толстой, год издательства - 19983. Название книги - Чайка, автор - А. Чехов, год издательства - 2015</Books>
+    <Id>1</Id>
+    <Name>qwerty</Name>
+    <Adress>Tales-Street</Adress>
+  </publicationhouse>
+  <publicationhouse>
+    <Books>2. Название книги - Война и мир, автор - Л. Толстой, год издательства - 1998</Books>
+    <Id>2</Id>
+    <Name>asd</Name>
+    <Adress>asd</Adress>
+  </publicationhouse>
+</publications>

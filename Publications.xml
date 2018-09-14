@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publications>
+  <publicationviewmodel>
+    <YearOfPublishing>2016</YearOfPublishing>
+    <Author>И. Тургенев</Author>
+    <PublicationHouses>Library.ViewModels.Models.PublicationHouseViewModel</PublicationHouses>
+    <Id>1</Id>
+    <Name>Отцы и дети</Name>
+  </publicationviewmodel>
+  <publicationviewmodel>
+    <YearOfPublishing>1998</YearOfPublishing>
+    <Author>Л. Толстой</Author>
+    <PublicationHouses>Library.ViewModels.Models.PublicationHouseViewModelLibrary.ViewModels.Models.PublicationHouseViewModel</PublicationHouses>
+    <Id>2</Id>
+    <Name>Война и мир</Name>
+  </publicationviewmodel>
+  <publicationviewmodel>
+    <YearOfPublishing>2015</YearOfPublishing>
+    <Author>А. Чехов</Author>
+    <PublicationHouses>Library.ViewModels.Models.PublicationHouseViewModel</PublicationHouses>
+    <Id>3</Id>
+    <Name>Чайка</Name>
+  </publicationviewmodel>
+  <publicationviewmodel>
+    <TypeOfCover>asd</TypeOfCover>
+    <NumberOfPages>123</NumberOfPages>
+    <Id>7</Id>
+    <Name>asd</Name>
+  </publicationviewmodel>
+  <publicationviewmodel>
+    <YearOfPublishing>2012</YearOfPublishing>
+    <Number>20</Number>
+    <Id>4</Id>
+    <Name>Forbes</Name>
+  </publicationviewmodel>
+  <publicationviewmodel>
+    <YearOfPublishing>1960</YearOfPublishing>
+    <Number>10</Number>
+    <Id>5</Id>
+    <Name>Biography</Name>
+  </publicationviewmodel>
+  <publicationviewmodel>
+    <YearOfPublishing>1880</YearOfPublishing>
+    <Number>9</Number>
+    <Id>6</Id>
+    <Name>Times</Name>
+  </publicationviewmodel>
+</publications>

@@ -1,0 +1,23 @@
+﻿@model IEnumerable<Library.ViewModels.Models.BrochureViewModel>
+
+@{
+    ViewBag.Title = "Brochure List";
+}
+
+<h3>Brochures</h3>
+
+@if (User.IsInRole("Admin"))
+{
+<div>
+    @using (Html.BeginForm("AddBrochure", "Brochure", FormMethod.Get))
+    {
+        <button class="btn btn-lg btn-primary" type="submit">Add Brochure</button>
+    }
+</div>
+}
+<br>
+<div class="grid" id="BrochureGrid"></div>
+<br>
+<div>
+    @Html.ActionLink("To Main Page", "Index", "Publication")
+</div>

@@ -1,0 +1,27 @@
+﻿@model IEnumerable<Library.ViewModels.Models.BookViewModel>
+
+@{
+    ViewBag.Title = "Book List";
+}
+
+<h3>Books</h3>
+
+<div>
+    @if (User.IsInRole("Admin"))
+    {
+        <div>
+            @using (Html.BeginForm("AddBook", "Book", FormMethod.Get))
+            {
+                <button class="btn btn-lg btn-primary" type="submit">Add Book</button>
+            }
+        </div>
+    }
+    <br>
+    <div class="table" id="BookGrid"></div>
+</div>
+<br>
+</div>
+<div>
+    @Html.ActionLink("To Main Page", "Index", "Publication")
+</div>
+

@@ -1,0 +1,59 @@
+﻿@model Library.ViewModels.Models.LoginModel
+@{
+    Layout = null;
+}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="~/favicon.ico">
+
+    <title>Sign in</title>
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet">
+
+    <link href="~/Content/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <link href="~/Content/signin.css" rel="stylesheet">
+
+    <script src="~/Scripts/ie-emulation-modes-warning.js"></script>
+</head>
+
+<body class="text-center">
+    @using (Html.BeginForm("Login", "Account", FormMethod.Post, new { @class = "form-signin" }))
+    {
+
+        @Html.AntiForgeryToken()
+        <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+        <br>
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <label for="Email" class="sr-only">Email address</label>
+        <input type="email" name="Email" id="Email" class="form-control" placeholder="Email address" required autofocus>
+        @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+        <br>
+        <label for="Password" class="sr-only">Password</label>
+        <input type="password" name="Password" id="Password" class="form-control" placeholder="Password" required>
+        @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+
+        <div class="checkbox mb-3">
+            <label>
+                <input type="checkbox" value="remember-me"> Remember me
+            </label>
+        </div>
+        <button class="btn btn-lg btn-primary" type="submit">Sign in</button>
+        <br>
+        <br>
+        <div>
+            @Html.ActionLink("Register as a new user", "Register")<br>
+            @Html.ActionLink("Back to Main", "Index", "Publication")
+        </div>
+    }
+
+    <script src="~/Scripts/ie10-viewport-bug-workaround.js"></script>
+
+</body>
+</html>

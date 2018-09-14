@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publications>
+  <magazine>
+    <Number>20</Number>
+    <YearOfPublishing>2012</YearOfPublishing>
+    <Id>4</Id>
+    <Name>Forbes</Name>
+  </magazine>
+  <magazine>
+    <Number>10</Number>
+    <YearOfPublishing>1960</YearOfPublishing>
+    <Id>5</Id>
+    <Name>Biography</Name>
+  </magazine>
+  <magazine>
+    <Number>9</Number>
+    <YearOfPublishing>1880</YearOfPublishing>
+    <Id>6</Id>
+    <Name>Times</Name>
+  </magazine>
+</publications>

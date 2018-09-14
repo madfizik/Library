@@ -1,0 +1,19 @@
+﻿@if (Request.IsAuthenticated && !User.IsInRole("Admin"))
+{
+    <h2>Привет тебе, читатель!</h2>
+    <h3>Publications</h3>
+}
+@if (User.IsInRole("Admin"))
+{
+    <h2>Приветствую, администратор.</h2>
+    <h3>Publications</h3>
+}
+@if (!Request.IsAuthenticated)
+{
+    <h4>Привет!</h4>
+    <h4>Для того, чтобы просмотреть коллекцию библиотеки, пожалуйста, пройдите регистрацию или залогинтесь.</h4>
+}
+
+<br>
+<div id="grid"></div>
+

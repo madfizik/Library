@@ -1,3 +1,13 @@
-﻿@{
+﻿@using Library.Enums
+@{
     Layout = "~/Views/Shared/_Layout.cshtml";
+    if (User.IsInRole("User") && !User.IsInRole("Admin"))
+    {
+        <script src="~/Scripts/usergrid.js"></script>
+    }
+    if (User.IsInRole("Admin"))
+    {
+        Layout = "~/Views/Shared/_AdminLoyaut.cshtml";
+        <script src="~/Scripts/admingrid.js"></script>
+    }
 }
